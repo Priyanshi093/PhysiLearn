@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--navigation-->
+    <nav>
+        <h2 id="logo">PhysiLearn</h2>
+        <div class="navigation">
+            <ul>
+                <i class="fa-regular fa-circle-xmark" id="close"></i>
+                <li><a href="#">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+    </nav>
+    
+    <!--Home-->
+    <section id="about_home">
+        <h2>Blog</h2>
+    </section>
+    
+    <section id="blog-container">
+        <div class="blogs">
+            <h3>Explore the different Blogs on various concepts of Physics.</h3>
+
+         <div class="post">
+            <img src="images/blog1.jpg" alt="">
+            <h3>Learn About Particle Physics</h3>
+            <p>Particle physics or high-energy physics is the study of fundamental particles and forces that constitute matter and radiation. The field also studies combinations of elementary particles up to the scale of protons and neutrons, while the study of combination of protons and neutrons is called nuclear physics.</p>
+            <a href="post1.html">Read More</a>
+         </div>
+         <div class="post">
+            <img src="images/blog2.jpg" alt="">
+            <h3>Young's Double Slit Experiment</h3>
+            <p>In modern physics, the double-slit experiment demonstrates that light and matter can satisfy the seemingly incongruous classical definitions for both waves and particles, which is considered evidence for the fundamentally probabilistic nature of quantum mechanics. </p>
+            <a href="post2.html">Read More</a>
+         </div>
+         <div class="post">
+            <img src="images/blog3jpg.jpg" alt="">
+            <h3>Quantum Mechanics</h3>
+            <p>Quantum mechanics is a fundamental theory in physics that describes the behavior of nature at and below the scale of atoms.[2]:1.1. It is the foundation of all quantum physics including quantum chemistry, quantum field theory, quantum technology, and quantum information science.</p>
+            <a href="post3.html">Read More</a>
+         </div>
+         <div class="post">
+            <img src="images/blog4.jpg" alt="">
+            <h3>Get to know more about Gravitation </h3>
+            <p>In physics, gravity (from Latin gravitas 'weight'[1]) is a fundamental interaction which causes mutual attraction between all things that have mass. Gravity is, by far, the weakest of the four fundamental interactions, approximately 10<sup>38 </sup>times weaker than the strong interaction, 10<sup>36</sup> times weaker than the electromagnetic force and 10<sup>29</sup> times weaker than the weak interaction</p>
+            <a href="post4.html">Read More</a>
+         </div>
+
+
+        </div>
+
+    </section> 
+    
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="foot-col">
+        <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing service</li>
+        </div>
+
+        <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+        </div>
+    
+        <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing service</li>
+        </div>
+
+        <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. Get notified everytime something new happens.</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+</div>
+
+  <div class="cnl">
+    <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2021, All rights reserved | This template is made by Priyanshi</p>
+        </div>
+        <div class="pro-links">
+            <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+        
+    </footer>
+    <!-- <script>
+    // Function to add the "active" class to the nav element
+    function addActiveClass() {
+        document.querySelector('nav .navigation ul').classList.add('active');
+    }
+
+    // Function to remove the "active" class from the nav element
+    function removeActiveClass() {
+        document.querySelector('nav .navigation ul').classList.remove('active');
+    }
+
+    // Click event for the element with id "menu"
+    document.getElementById('menu').addEventListener('click', addActiveClass);
+
+    // Click event for the element with id "close"
+    document.getElementById('close').addEventListener('click', removeActiveClass);
+</script> -->
+    <script>
+
+    $(document).ready(function() {
+        $("#menu").click(function(){
+            $("nav .navigation ul").addClass("active");
+        });
+        $("#close").click(function(){
+            $("nav .navigation ul").removeClass("active");
+      });
+    });
+
+    </script> 
+   
+
+</body>
+</html>
